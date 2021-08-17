@@ -9,6 +9,7 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="Stylesheet" href="surah-translation.css">
+    <link rel="Stylesheet" href="css/popup.css">
     <title>Quran  </title>
 
     <style>
@@ -133,7 +134,56 @@
                 '<audio controls loop>
                 <source src="audio/'.$data['audios']. '" type="audio/mpeg">
                 </audio>';
+
+                echo '<br><i class="fa fa-edit" style="font-size:36px"></i>
+<button class="open-button " onclick="openForm()">Note</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+   
+
+    <label for="email"><b>หัวข้อ</b></label>
+    <input type="text" placeholder="" name="email" required>
+  
+    <label for="psw"><b>คำอธิบาย</b></label>
+    <input type="text2" placeholder="" name="psw" required>
+
+    <button type="submit" class="btn">บันทึก</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">ปิด</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>';
                 
+               /*echo'<br><br><div class="row">
+               <div class ="col-md-4">
+       
+               <div class ="col-md-4">
+               <img style="margin-top: -5px;" alt="" width="30" src="imgquran/p3.jpg" class ="play-btn" data-toggle="modal" data-target ="#play-vdo-1"> 
+               </div>
+               </div>
+       
+                   <div class ="modal fade" id="play-vdo-1">
+                   <div class="modal-dialog modal-dialog-centered" role="document">
+                   <div class="modal-content">
+       
+                   <div class="modal-body">
+                       <video width="100%" controls>
+                           <source src="imgquran/alee copy.mp4" type="video/mp4">
+                   </video>
+                   </div>
+                   <div>
+                   </div>';*/
+
+
                 //'<audio controls loop>
                 //<source src="audio/"'.$data['audios']. 'type="audio/mpeg">
                  //</audio>';
