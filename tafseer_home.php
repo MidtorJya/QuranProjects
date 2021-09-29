@@ -1,3 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Quran  </title>
+    <body>
+
+     
+    
+ <?php 
+    include "header.php"; ?>
+<br>
 
 <div class ="container">
   <table class="table table-hover table-bordered border-success table-striped">
@@ -16,7 +33,7 @@
         <td>1</td>
         <td>
        
-          <a href ="{{ route('tafseer_detail') }}">
+          <a href ="tafseer_detail.php">
           Surah Al-Fatihah</a></td>
         <td>الفاتحة</td>
         <td>Mekkah</td>
@@ -1269,5 +1286,15 @@
      
 </table>
   <br>
-  <br>
+
    	</div>
+
+     <?php include "footer.php"; ?>
+	</body>
+</html>
+    
+    <div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </div>
+    </html>
