@@ -25,7 +25,7 @@
     <style>
       @font-face {
         font-family:'Uthmani' ;
-        src: url('assets/UthmanicHafs1Ver09.otf') format ('truetype');
+        src: url('assets/font/UthmanicHafs1Ver09.otf')format('truetype');
       }
      .arabic{
          font-family: 'Uthmani', serif;
@@ -186,9 +186,9 @@
                 </audio>';
 
 
-              /*  echo '<br><i class="fa fa-edit" style="font-size:36px"></i> 
+              /* echo '<br><i class="fa fa-edit" style="font-size:36px"></i> 
 
-              //note
+             
               <br><i class="fa fa-edit" style="font-size:36px"></i>
 
 <button class="open-button " onclick="openForm()">Note</button>
@@ -257,14 +257,14 @@ function closeForm() {
         {
             $arabic_number = array('٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩');
             $jum_karakter = strlen($number);
-            //$temp = "";
+           $temp = "";
 
             for ($i =0; $i< $jum_karakter; $i++) {
                 $char = substr($number, $i, 1);
-               //  $temp .= $arabic_number[$char];
+                $temp .= $arabic_number[$char];
 
             }
-            return '<span class="arabic_number">' . ' </span>';            
+            return '<span class="arabic_number">' .$temp. ' </span>';            
         } 
 
 ?>
